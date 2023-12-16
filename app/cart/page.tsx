@@ -1,5 +1,5 @@
 import Heading from '@/Components/Heading'
-import useOrderDetails from '@/Hooks/useOrderDetails'
+import { getOrderDetails } from '@/Fetch/fetchOrderDetails'
 import CartDetails from '@/app/cart/CartDetails'
 import React from 'react'
 
@@ -14,12 +14,7 @@ export interface OrderDetailsProps{
     paymentMethods:string[]
 
 }
-export async function getOrderDetails() {
-    const res= await fetch("https://groww-intern-assignment.vercel.app/v1/api/order-details",{next:{revalidate:2}})
-    if(!res.ok) throw new Error("Failed to Fetch Cart Details")
-    const data = await res.json()
-    return data
- }
+
  export default async function Cart() {
  
      const orderDetails:OrderDetailsProps = await getOrderDetails()
