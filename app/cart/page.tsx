@@ -14,7 +14,7 @@ export interface OrderDetailsProps{
     paymentMethods:string[]
 
 }
-export async function GetOrderDetails() {
+export async function getOrderDetails() {
     const res= await fetch("https://groww-intern-assignment.vercel.app/v1/api/order-details",{next:{revalidate:2}})
     if(!res.ok) throw new Error("Failed to Fetch Cart Details")
     const data = await res.json()
@@ -22,7 +22,7 @@ export async function GetOrderDetails() {
  }
  export default async function Cart() {
  
-     const orderDetails:OrderDetailsProps = await GetOrderDetails()
+     const orderDetails:OrderDetailsProps = await getOrderDetails()
      console.log(orderDetails)
      
   return (
