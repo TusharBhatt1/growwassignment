@@ -1,10 +1,10 @@
 "use client"
-import ProductCard from "@/Components/products/ProductCard"
+import ProductCard from "../components/products/ProductCard"
 import Link from "next/link"
-import useOrderDetails from "@/Hooks/useOrderDetails"
+import useOrderDetails from "../hooks/useOrderDetails"
 import { OrderDetailsProps} from "@/app/cart/page"
 import { useEffect, useState } from "react"
-import Button from "@/Components/Button"
+import Button from "../components/Button"
 
 export default function CartDetails({ orderDetails }: { orderDetails: OrderDetailsProps }) {
   const { products } = orderDetails;

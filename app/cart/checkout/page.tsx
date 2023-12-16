@@ -1,9 +1,9 @@
 "use client"
-import useOrderDetails from '@/Hooks/useOrderDetails'
+import useOrderDetails from '@/app/hooks/useOrderDetails'
 import React, { useState } from 'react'
-import Button from '@/Components/Button'
+import Button from '@/app/components/Button'
 import Link from 'next/link'
-import UserDetails from '@/Components/UserDetails'
+import UserDetails from '@/app/components/UserDetails'
 
 export default function Checkout() {
   const [userDetails, setUserDetails]=useState({

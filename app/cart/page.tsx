@@ -1,5 +1,5 @@
-import Heading from '@/Components/Heading'
-import { getOrderDetails } from '@/Fetch/fetchOrderDetails'
+import Heading from '../components/Heading'
+import { getOrderDetails } from '../fetch/fetchOrderDetails'
 import CartDetails from '@/app/cart/CartDetails'
 import React from 'react'
 

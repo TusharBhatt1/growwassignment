@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { ProductType } from "../app/cart/page";
+import { ProductType } from "../cart/page";
 
 interface OrderDetails {
   existingCart: ProductType[];

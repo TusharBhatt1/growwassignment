@@ -1,5 +1,5 @@
 "use client"
-import useCategories from "@/Hooks/useCategories"
+import useCategories from "@/app/hooks/useCategories"
 import Button from "../Button"
 import { useEffect, useState } from "react"
 

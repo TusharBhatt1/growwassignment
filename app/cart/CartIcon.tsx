@@ -1,5 +1,5 @@
 "use client"
-import useOrderDetails from '@/Hooks/useOrderDetails';
+import useOrderDetails from '../hooks/useOrderDetails';
 import React from 'react'
 import { CiShoppingCart } from "react-icons/ci";
 export default function CartIcon() {

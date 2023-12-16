@@ -1,6 +1,6 @@
 
 import Link from "next/link"
-import CartIcon from "../../app/cart/CartIcon"
+import CartIcon from "@/app/cart/CartIcon"
 import Search from "../Search"
 import {AiOutlineSearch} from "react-icons/ai"
 

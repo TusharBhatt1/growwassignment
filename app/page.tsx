@@ -1,6 +1,6 @@
-import Heading from "@/Components/Heading"
+import Heading from "./components/Heading"
 import ProductsList from "@/app/product/ProductsList"
-import fetchData from "../Fetch/fetchData"
+import fetchData from "./fetch/fetchData"
 
 
 export default async function Home() {

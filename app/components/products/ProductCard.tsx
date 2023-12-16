@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Button from '../Button'
 import { ProductType } from '@/app/cart/page'
-import useOrderDetails from '@/Hooks/useOrderDetails'
+import useOrderDetails from '@/app/hooks/useOrderDetails'
 
 export default function ProductCard({product,isCart}:{product:ProductType,isCart:boolean}) {
 
