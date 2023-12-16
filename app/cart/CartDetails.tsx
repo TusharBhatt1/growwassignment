@@ -1,5 +1,5 @@
 "use client"
-import ProductCard from "@/Components/(products)/ProductCard"
+import ProductCard from "@/Components/products/ProductCard"
 import Link from "next/link"
 import useOrderDetails from "@/Hooks/useOrderDetails"
 import { OrderDetailsProps} from "@/app/cart/page"

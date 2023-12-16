@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic"
 import { useState } from "react"
 import { ProductType } from "../cart/page"
-const DynamicProductCard= dynamic(()=>import("../../Components/(products)/ProductCard"),{
+const DynamicProductCard= dynamic(()=>import("../../Components/products/ProductCard"),{
     loading:()=><p>Loading</p>
 })
 
